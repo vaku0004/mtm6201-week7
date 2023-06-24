@@ -1,0 +1,77 @@
+.dice4 circle{
+    fill: #fff;
+    transition: all 2s;
+    transform-origin: 25px 25px;
+}
+
+.dice4 circle:hover {
+    transform: scale(1.1);
+    fill: aquamarine;
+}
+
+.dice5 g{
+    transition: all .5s;
+    transform-origin: 100px 100px;
+}
+
+.dice5:hover g{
+    transform: scale(1.2) rotate(90deg);
+}
+
+.patterntext {
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+.cls-2{fill:#fff}
+.cls-3{fill:#fcf0c0}
+
+
+@keyframes move {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px);
+        scale: (2);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.pupil{
+animation: move 1s infinite;
+}
+
+.svg-wrap:hover .pupil{
+    animation-play-state: paused;
+}
+
+/*lamps*/
+
+.lampdiv {
+    background-color: black;
+}
+
+p {
+    color: #fff;
+}
+
+text {
+    font-size: 10px; /* изменить размер текста */
+    fill: rgb(205, 200, 200); /* изменить цвет текста */
+  }
+
+#blub {
+    fill: beige;
+}
+
+text:hover {
+    fill: green; /* изменить цвет текста при наведении мыши */
+    font-weight: bold; /* изменить стиль шрифта при наведении мыши */
+  }
+
+  #blub:hover {
+    fill: rgb(190, 190, 37);
+}

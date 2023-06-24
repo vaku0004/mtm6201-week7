@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SVG
+        </h1>
+        <img src="images/myfirst.svg" alt="graphic of square">
+
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+            <rect x="0" y="0" width="200" height="200" rx="8" ry="4" fill="#4DD0E1" />
+            <circle cx="50" cy="50" r="25" fill="#D50000"/>
+            </svg>
+
+            <svg class="dice4" width="200" height="200" viewBox="0 0 200 200">
+                <rect x="0" y="0" width="200" height="200" rx="8" ry="4" fill="#4DD0E1"/>
+                <circle id="dot" cx="50" cy="50" r="25" fill="#D50000"/>
+                <use xlink:href="#dot" x="100"/>
+                <use xlink:href="#dot" x="100" y="100"/>
+                <use xlink:href="#dot" y="100"/>
+            </svg>
+            
+
+        <svg class="dice5" width="200" height="200" viewBox="0 0 200 200">
+        <defs>
+            <rect id="box" x="0" y="0" width="200" height="200" rx="8" ry="4" fill="#4DD0E1" />
+            <circle id="point" cx="50" cy="50" r="25" fill="#D50000"/>
+        </defs>
+        <use xlink:href="#box" />
+        <g>
+            <use xlink:href="#point" />
+            <use xlink:href="#point" x="100" />
+            <use xlink:href="#point" y="100" />
+            <use xlink:href="#point" x="100" y="100"/>
+            <use xlink:href="#point" x="50" y="50"/>
+        </g>
+        </svg>
+
+
+        <svg width="320" height="200" viewBox="0 0 320 200" role="heading">
+            <defs>
+                <pattern width="320" height="200" id="zigzag" patternUnits="userSpaceOnUse">
+                <image width="320" height="200" xlink:href="http://placepattern.com/320/200" />
+                </pattern>
+            </defs>
+            <text class="patterntext" x="0" y="100" fill="url(#zigzag)">Pattern</text>
+        </svg>
+        <div class="svg-wrap">      
+            <svg id="smily" viewBx="0 0 487 484" width="487" height="484">
+                <circle id="face" cx="241" cy="243" r="234" style="fill:#ffe269"/>
+                <path id="mouth" d="M100 292h281.79s-18 78-140.9 78S100 292 100 292Z" class="cls-2"/>
+                <ellipse id="eye-l" cx="141.5" cy="154" class="cls-2" rx="37.5" ry="65"/>
+                <ellipse id="eye-r" cx="342.5" cy="154" class="cls-2" rx="37.5" ry="65"/>
+                <circle class="pupil" id="pupil-l" cx="137.5" cy="182.5" r="24.5"/>
+                <circle class="pupil" id="pupil-r" cx="337.5" cy="182.5" r="24.5"/>
+                <path id="eyelash-l" d="M179 154c-37 2-37 0-75 0 0-35.9 16.79-65 37.5-65s37.5 29.1 37.5 65Z" class="cls-3"/>
+                <path id="eyelash-r" d="M380 154c-37 2-37 0-75 0 0-35.9 16.79-65 37.5-65s37.5 29.1 37.5 65Z" class="cls-3"/>
+              </svg>
+              
+        </div>  
+        
+        
+    <!-- Это HTML комментарий -->
+
+    <h2>My lamps</h2>
+    <div class="lampdiv">
+        <img src="images/4.svg" class="lamp4" alt="lamp4" width="400" height="400" viewBox="0 0 400 400">
+        <p>find your idea</p>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="lights" x="0" y="0" style="enable-background:new 0 0 128 128" version="1.1" viewBox="0 0 128 128">
+             <style>
+              .st0{display:none;fill:#87c228}
+            </style>
+            <g id="row1_1_">
+              <path id="blub" d="M77.9 109.9H50.1c-1.3 0-2.4-1.1-2.4-2.4v-5.2c0-1.3 1.1-2.4 2.4-2.4H78c1.3 0 2.4 1.1 2.4 2.4v5.2c-.1 1.3-1.1 2.4-2.5 2.4zM54.5 123s2.3 5 5.2 5h8.6c2.9 0 5.2-5 5.2-5m2.1-4.5v-3.6c0-.9-.7-1.7-1.7-1.7H54.1c-.9 0-1.7.7-1.7 1.7v3.6c0 .9.7 1.7 1.7 1.7h19.8c.9-.1 1.7-.8 1.7-1.7zM64 97.1c-18.4 0-29.4-14.5-29.4-38.7C34.6 33.8 51.6 0 64 0s29.4 33.8 29.4 58.4c0 24.2-11 38.7-29.4 38.7zm0-92.6c-7.4 0-24.7 28.2-24.7 53.9 0 21.7 9 34.2 24.7 34.2s24.7-12.5 24.7-34.2C88.7 32.7 71.4 4.5 64 4.5z"/>
+              <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">Ваш текст</text>
+            </g>
+        </svg>
+    </div>
+    
+          
+          
+
+    </div>
+          
+    
+
+           
+      
+    </div>
+</body>
+</html>
